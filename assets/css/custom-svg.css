@@ -1,0 +1,134 @@
+		/* Custom svg files */
+		
+
+	.svg1{
+			display: inline-block;
+			border: solid 1px;
+			border-radius: 100%;
+.iconb {
+		text-decoration: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.iconb:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: JP;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		.iconb > .label {
+			display: none;
+		}
+
+		.iconb.major {
+			border: solid 1px;
+			display: inline-block;
+			border-radius: 100%;
+			padding: 0.65em;
+			margin: 0 0 2em 0;
+			cursor: default;
+		}
+
+			.iconb.major:before {
+				display: inline-block;
+				font-size: 6.25rem;
+				width: 2.25em;
+				height: 2.25em;
+				line-height: 2.2em;
+				border-radius: 100%;
+				border: solid 1px;
+				text-align: center;
+			}
+
+		.iconb.alt {
+			display: inline-block;
+			border: solid 1px;
+			border-radius: 100%;
+		}
+
+			.iconb.alt:before {
+				display: block;
+				font-size: 1em;
+				width: 2em;
+				height: 2em;
+				text-align: center;
+				line-height: 2em;
+			}
+
+		.iconb.style1 {
+			color: #efa8b0;
+		}
+
+		.iconb.style2 {
+			color: #c79cc8;
+		}
+
+		.iconb.style3 {
+			color: #a89cc8;
+		}
+
+		.iconb.style4 {
+			color: #9bb2e1;
+		}
+
+		.iconb.style5 {
+			color: #8cc9f0;
+		}
+
+		@media screen and (max-width: 1680px) {
+
+			.iconb.major:before {
+				font-size: 5.5rem;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.iconb.major:before {
+				font-size: 4.75rem;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.iconb.major {
+				margin: 0 0 1.5em 0;
+				padding: 0.35em;
+			}
+
+				.iconb.major:before {
+					font-size: 3.5rem;
+				}
+
+		}
+
+	.iconb.major {
+		border-color: rgba(255, 255, 255, 0.35);
+	}
+
+		.iconb.major:before {
+			border-color: rgba(255, 255, 255, 0.35);
+		}
+
+	.iconb.alt {
+		border-color: rgba(255, 255, 255, 0.35);
+		color: #ffffff;
+	}
+
+		.iconb.alt:hover {
+			background-color: rgba(255, 255, 255, 0.075);
+		}
+
+		.iconb.alt:active {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
