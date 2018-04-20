@@ -17,12 +17,12 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Tutorial #2</h1>
+						<h1>How to make a Tweak</h1>
 					</header>
 
 				<!-- Main -->
 					<div id="main">
-
+			<a href="tutorials.html" class="button"><i class="fa fa-book">&nbsp; Tutorials</i></a>
 						<!-- Introduction -->
 							<section id="intro" class="main">
 								<div class="spotlight">
@@ -32,17 +32,17 @@
 										</header>
 
 <p align="left" style="font-size:15px">Step 1: <b>Intro and Download</b></p>
-<p align="left" style="font-size:10px">In this tutorial I will be showing you how to make a simple "Page Dots" remover. We will begin by downloading the base project <a href="https://www.dropbox.com/s/cwqdlle3raxfdye/page.zip?dl=0"><b>here</b></a></p>
+<p align="left" style="font-size:15px">In this tutorial I will be showing you how to make a simple "Page Dots" remover. We will begin by downloading the base project <a href="https://www.dropbox.com/s/cwqdlle3raxfdye/page.zip?dl=0"><b>here</b></a></p>
 
 <br >
 
 <p align="left" style="font-size:15px">Step 2: <b>Symlinking Theos and Setting up</b></p>
-<p align="left" style="font-size:10px">Now that we have the base project, we need to do a few more things... <br >1. Move the project to /var/mobile<br >2. Symlink theos<br >3. Rename "com.yourcompany.page" (yourcompany being your username) which is inside of the control file</p>
+<p align="left" style="font-size:15px">Now that we have the base project, we need to do a few more things... <br >1. Move the project to /var/mobile<br >2. Symlink theos<br >3. Rename "com.yourcompany.page" (yourcompany being your username) which is inside of the control file</p>
 
 <br >
 
 <p align="left" style="font-size:15px">Step 3: <b>Editing the tweak.xm</b></p>
-<p align="left" style="font-size:10px">Now we have sorted everything out, we can finally begin to edit the actual tweak. Open up tweak.xm and you should see my code, this is just the base and will do nothing until we add a value.
+<p align="left" style="font-size:15px">Now we have sorted everything out, we can finally begin to edit the actual tweak. Open up tweak.xm and you should see my code, this is just the base and will do nothing until we add a value.
 <br >
 <b>Base code: <br >
 <code>%hook SBIconPageIndicatorImageSetResult</code>
@@ -56,17 +56,17 @@
 <br >
 
 <p align="left" style="font-size:15px">Details: <b>What are methods and how to use them?</b></p>
-<p align="left" style="font-size:10px">
+<p align="left" style="font-size:15px">
 Methods are what we use to define new code, we use this new code with either basic or advanced methods. Some are listed below for you..<br >
 <br ><b>Simple methods used in coding are</b>: <br ><code>id(NULL or 0)</code><br ><code>bool(TRUE or FALSE)</code><br ><code>int(1 - infinity)</code><br ><code>float(1f = 1x, 2f = 2x)</code><br ><code>double(1 - infinity)</code><br ><code>long long(1 - infinity)</code></p>
 
-<p align="left" style="font-size:10px"><b>Advanced methods used in coding are</b>: <br ><code>CGRect(x, y, w, h)</code><br ><code>UIColor([UIColor blackColor])</code><br ><code>CGSize(w, h)</code></p>
+<p align="left" style="font-size:15px"><b>Advanced methods used in coding are</b>: <br ><code>CGRect(x, y, w, h)</code><br ><code>UIColor([UIColor blackColor])</code><br ><code>CGSize(w, h)</code></p>
 
 <br >
 <br >
 
 <p align="left" style="font-size:15px">Step 4: <b>Editing the tweak.xm (cont.)</b></p>
-<p align="left" style="font-size:10px">Now you should know about the different methods and their values. We will now edit the page dots. You should see {}, inside of these we will want to add = <code>return NULL;</code> and the finishing product should be<br >
+<p align="left" style="font-size:15px">Now you should know about the different methods and their values. We will now edit the page dots. You should see {}, inside of these we will want to add = <code>return NULL;</code> and the finishing product should be<br >
 <code>-(id) pageIndicatorSet { 
 return NULL;
 }</code>
@@ -76,7 +76,7 @@ return NULL;
 <br >
 
 <p align="left" style="font-size:15px">Step 5: <b>Building and Deploying</b></p>
-<p align="left" style="font-size:10px">We now have the finished product, well pretty much. &nbsp; Open up your terminal prompt and follow these steps:<br ><br >
+<p align="left" style="font-size:15px">We now have the finished product, well pretty much. &nbsp; Open up your terminal prompt and follow these steps:<br ><br >
 
 <code>su</code><br >
 <code><i>password</i></code><br >
@@ -91,7 +91,7 @@ Your tweak should be building, just sit back and watch as it makes the tweak and
 <br >
 
 <p align="left" style="font-size:15px"><b>Finishing up</b></p>
-<p align="left" style="font-size:10px">When and if you want to uninstall the tweak just go into Cydia and remove it as usual. You can also add a toggle but that can be another tutorial. Thank you all for reading! Enjoy your new tweak.</p>
+<p align="left" style="font-size:15px">When and if you want to uninstall the tweak just go into Cydia and remove it as usual. You can also add a toggle but that can be another tutorial. Thank you all for reading! Enjoy your new tweak.</p>
 
 										
 </section>
